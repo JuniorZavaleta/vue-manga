@@ -14,12 +14,20 @@ new Vue({
     methods: {
         changePage: function (event) {
             coordX = event.clientX;
+            marginLeft = parseInt(window.getComputedStyle(event.currentTarget).marginLeft);
 
-            if (coordX > 0.2*window.innerWidth) {
+            startX = coordX - marginLeft;
+            width = window.innerWidth - 2 * marginLeft;
+
+            if (startX > 0.3 * width) {
                 this.nextPage();
             } else {
                 this.prevPage();
             }
+        },
+
+        choosePage: function (event) {
+            this.actualPage = this.pages[event.target.value-1];
         },
 
         prevPage: function () {

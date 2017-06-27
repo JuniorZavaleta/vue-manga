@@ -2,6 +2,10 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+body, html {
+  margin: 0px;
+}
+
 #vue-app {
   display: grid;
 }
@@ -24,7 +28,7 @@ button, .last-chapter-message > p {
 
 .page > img {
   display: block;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .next-chapter {
@@ -39,4 +43,26 @@ button, .last-chapter-message > p {
 
 .next-chapter > button, .last-chapter-message > p {
   padding: 12px;
+}
+
+#actual-manga {
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+hr {
+  border: 1px solid #094375;
+  margin: 1px;
+}
+
+select {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+}
+
+.choose-page {
+  float: right;
+  padding: 2px;
 }

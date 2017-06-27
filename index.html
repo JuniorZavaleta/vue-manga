@@ -10,11 +10,17 @@
 </head>
 <body>
   <div id="vue-app">
-    <div class="manga-list" v-for="manga in mangas">
-      <strong>{{ manga.title }}</strong> - {{ manga.author }}
+    <div id="actual-manga">
+      <span>{{ actualManga.author }}</span>
+      <span><strong>{{ actualManga.title }}</strong></span>
+      <span>Chapter {{ actualChapter }}</span>
+      <select class="choose-page" v-on:change="choosePage">
+        <option v-for="page in pages">{{ page.page }}</option>
+      </select>
     </div>
-    <div class="page" v-for="page in pages" v-on:click="changePage">
-      <img v-bind:src="page.image_path" v-show="page == actualPage">
+    <hr></hr>
+    <div class="page" v-for="page in pages">
+      <img v-bind:src="page.image_path" v-show="page == actualPage" v-on:click="changePage">
     </div>
     <div class="next-chapter" v-show="showAskNextChapter">
       <button v-on:click="loadNextChapter">Do you want see the next chapter? ( ͡° ͜ʖ ͡°)</button>
