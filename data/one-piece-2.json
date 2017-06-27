@@ -1,0 +1,22 @@
+[
+	{
+		"page": 1,
+		"image_path": "/vue/mangas/one-piece/2/1.jpg"
+	},
+	{
+		"page": 2,
+		"image_path": "/vue/mangas/one-piece/2/2.jpg"
+	},
+	{
+		"page": 3,
+		"image_path": "/vue/mangas/one-piece/2/3.jpg"
+	},
+	{
+		"page": 4,
+		"image_path": "/vue/mangas/one-piece/2/4.jpg"
+	},
+	{
+		"page": 5,
+		"image_path": "/vue/mangas/one-piece/2/5.jpg"
+	}
+]
