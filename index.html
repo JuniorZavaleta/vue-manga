@@ -13,7 +13,7 @@
     <div class="manga-list" v-for="manga in mangas">
       <strong>{{ manga.title }}</strong> - {{ manga.author }}
     </div>
-    <div class="page" v-for="page in pages" v-on:click="nextPage">
+    <div class="page" v-for="page in pages" v-on:click="changePage">
       <img v-bind:src="page.image_path" v-show="page == actualPage">
     </div>
     <div class="next-chapter" v-show="showAskNextChapter">

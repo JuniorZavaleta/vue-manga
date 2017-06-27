@@ -12,6 +12,22 @@ new Vue({
     },
 
     methods: {
+        changePage: function (event) {
+            coordX = event.clientX;
+
+            if (coordX > 0.2*window.innerWidth) {
+                this.nextPage();
+            } else {
+                this.prevPage();
+            }
+        },
+
+        prevPage: function () {
+            if (this.actualPage.page > 1) {
+                this.actualPage = this.pages[this.actualPage.page-2];
+            }
+        },
+
         nextPage: function () {
             // Dont add 1 because array start on 0
             if (this.actualPage.page == this.pages.length) {

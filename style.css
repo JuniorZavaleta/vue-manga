@@ -1,34 +1,42 @@
 * {
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#vue-app {
+  display: grid;
 }
 
 button, .last-chapter-message > p {
-    border: 0px;
-    background: #000;
-    color: #fff;
-    font-size: 18px;
+  border: 0px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
 }
 
 .page {
-    display: inline;
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.page > img {
+  display: block;
+  margin: auto;
 }
 
 .next-chapter {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .last-chapter-message {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 .next-chapter > button, .last-chapter-message > p {
-    padding: 12px;
+  padding: 12px;
 }
